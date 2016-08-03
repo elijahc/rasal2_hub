@@ -1,0 +1,5 @@
+hub Mikkelson_2010
+shortLabel Mikkelson_2010
+longLabel Mikkelson_2010
+genomesFile genomes.txt
+email elijah.christensen@Colorado.edu
