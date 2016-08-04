@@ -38,14 +38,14 @@ visibility full
 
     track  H3K27me3_t4_1
     type bigWig
-    parent track H3K27me3_t4
+    parent H3K27me3_t4
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040163/coverage.bw
     shortLabel H3K27me3 day 7 post confluence
     longLabel H3K27me3 day 7 post confluence
 
     track  H3K27me3_t4_2
     type bigWig
-    parent track H3K27me3_t4
+    parent H3K27me3_t4
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040164/coverage.bw
     shortLabel H3K27me3 day 7 post confluence
     longLabel H3K27me3 day 7 post confluence
