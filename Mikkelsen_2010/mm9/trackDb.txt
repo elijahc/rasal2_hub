@@ -3,7 +3,7 @@ bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen
 shortLabel H3K27ac day 7 post confluence
 longLabel H3K27ac day 7 post confluence
 type bigWig
-visibility dense
+visibility full
 maxHeightPixels 128:50:11
 
 track  H3K27ac_t4_2
@@ -11,7 +11,7 @@ bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen
 shortLabel H3K27ac day 7 post confluence
 longLabel H3K27ac day 7 post confluence
 type bigWig
-visibility dense
+visibility full
 maxHeightPixels 128:50:11
 
 track  H3K27ac_t4_3
@@ -19,7 +19,7 @@ bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen
 shortLabel H3K27ac day 7 post confluence
 longLabel H3K27ac day 7 post confluence
 type bigWig
-visibility dense
+visibility full
 maxHeightPixels 128:50:11
 
 track  H3K27me3_t4_1
@@ -27,7 +27,7 @@ bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen
 shortLabel H3K27me3 day 7 post confluence
 longLabel H3K27me3 day 7 post confluence
 type bigWig
-visibility dense
+visibility full
 maxHeightPixels 128:50:11
 
 track  H3K27me3_t4_2
@@ -35,5 +35,5 @@ bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen
 shortLabel H3K27me3 day 7 post confluence
 longLabel H3K27me3 day 7 post confluence
 type bigWig
-visibility dense
+visibility full
 maxHeightPixels 128:50:11
