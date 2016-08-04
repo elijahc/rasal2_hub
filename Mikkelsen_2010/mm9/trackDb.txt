@@ -2,10 +2,12 @@ track H3K27ac_t4
 type bigWig
 container multiWig
 shortLabel H3K27ac_day_7
+longLable H3K27ac_day_7
+visibility full
 aggregate transparentOverlay
 showSubtrackColorOnUi on
 maxHeightPixels 500:50:8
-visibility full
+viewLimits 1:20
 
     track  H3K27ac_t4_1
     type bigWig
@@ -32,11 +34,13 @@ visibility full
 track H3K27me3_t4
 type bigWig
 container multiWig
-shortLabel H3K27ac_day_7
+shortLabel H3K27me3_day_7
+longLabel H3K27me3_day_7
+visibility full
 aggregate transparentOverlay
 showSubtrackColorOnUi on
 maxHeightPixels 500:50:8
-visibility full
+viewLimits 1:20
 
     track  H3K27me3_t4_1
     type bigWig
