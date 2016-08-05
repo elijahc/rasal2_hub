@@ -70,7 +70,7 @@ viewLimits 1:20
     track  WCE_1
     type bigWig
     parent 3T3L1_WCE
-    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040163/coverage.bw
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040087/coverage.bw
     shortLabel 3T3L1 WCE rep 1
     longLabel 3T3L1 WCE rep 1
 
