@@ -55,3 +55,35 @@ viewLimits 1:20
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040164/coverage.bw
     shortLabel H3K27me3 day 7 post confluence
     longLabel H3K27me3 day 7 post confluence
+    
+track 3T3L1_WCE
+type bigWig
+container multiWig
+shortLabel 3T3L1 WCE
+longLabel 3T3L1 Whole Cell Extracts (Input Control)
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+maxHeightPixels 500:50:8
+viewLimits 1:20
+
+    track  WCE_1
+    type bigWig
+    parent 3T3L1_WCE
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040163/coverage.bw
+    shortLabel 3T3L1 WCE rep 1
+    longLabel 3T3L1 WCE rep 1
+
+    track  WCE_2
+    type bigWig
+    parent 3T3L1_WCE
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040091/coverage.bw
+    shortLabel 3T3L1 WCE rep 2
+    longLabel 3T3L1 WCE rep 2
+
+    track  WCE_3
+    type bigWig
+    parent 3T3L1_WCE
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040095/coverage.bw
+    shortLabel 3T3L1 WCE rep 3
+    longLabel 3T3L1 WCE rep 3
