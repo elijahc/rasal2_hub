@@ -1,3 +1,29 @@
+track H3K27ac_t3
+type bigWig
+container multiWig
+shortLabel H3K27ac_t3
+longLabel H3K27ac_t3
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+maxHeightPixels 500:50:8
+viewLimits 1:20
+
+    track  H3K27ac_t3_1
+    type bigWig
+    parent H3K27ac_t3
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040140/coverage.bw
+    shortLabel H3K27ac_t3
+    longLabel H3K27ac_t3
+    color 255,0,0
+
+    track  H3K27ac_t3_2
+    type bigWig
+    parent H3K27ac_t3
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040141/coverage.bw
+    shortLabel H3K27ac_t3
+    longLabel H3K27ac_t3
+
 track H3K27ac_t4
 type bigWig
 container multiWig
@@ -12,7 +38,7 @@ viewLimits 1:20
     track  H3K27ac_t4_1
     type bigWig
     parent H3K27ac_t4
-    bigDataUrl https://github.com/elijahc/rasal2_hub/blob/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040160/coverage.bw?raw=true
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040160/coverage.bw
     shortLabel H3K27ac day 7
     longLabel H3K27ac day 7
     color 255,0,0
