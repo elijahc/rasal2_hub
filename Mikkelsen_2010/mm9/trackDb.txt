@@ -12,7 +12,7 @@ viewLimits 1:20
     track  H3K27ac_t4_1
     type bigWig
     parent H3K27ac_t4
-    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040160/coverage.bw
+    bigDataUrl https://github.com/elijahc/rasal2_hub/blob/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040160/coverage.bw?raw=true
     shortLabel H3K27ac day 7
     longLabel H3K27ac day 7
     color 255,0,0
@@ -20,14 +20,14 @@ viewLimits 1:20
     track  H3K27ac_t4_2
     type bigWig
     parent H3K27ac_t4
-    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040161/coverage.bw
+    bigDataUrl https://github.com/elijahc/rasal2_hub/blob/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040161/coverage.bw?raw=true
     shortLabel H3K27ac day 7 post confluence
     longLabel H3K27ac day 7 post confluence
 
     track  H3K27ac_t4_3
     type bigWig
     parent H3K27ac_t4
-    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040162/coverage.bw
+    bigDataUrl https://github.com/elijahc/rasal2_hub/blob/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040162/coverage.bw?raw=true
     shortLabel H3K27ac day 7 post confluence
     longLabel H3K27ac day 7 post confluence
 
