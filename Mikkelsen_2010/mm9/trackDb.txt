@@ -2,7 +2,7 @@ track H3K27ac_t1
 type bigWig
 container multiWig
 shortLabel H3K27ac_t1
-longLabel H3K27ac_t1
+longLabel H3K27ac_t1 Proliferating preadipocytes
 visibility full
 aggregate transparentOverlay
 showSubtrackColorOnUi on
@@ -14,7 +14,7 @@ viewLimits 1:20
     parent H3K27ac_t1
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040103/coverage.bw
     shortLabel H3K27ac_t1
-    longLabel H3K27ac_t1
+    longLabel H3K27ac_t1 Proliferating preadipocytes
     color 255,0,0
 
     track  H3K27ac_t1_2
@@ -22,13 +22,14 @@ viewLimits 1:20
     parent H3K27ac_t1
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040104/coverage.bw
     shortLabel H3K27ac_t1
-    longLabel H3K27ac_t1
+    longLabel H3K27ac_t1 Proliferating preadipocytes
+    color 0,255,0
 
 track H3K27ac_t2
 type bigWig
 container multiWig
 shortLabel H3K27ac_t2
-longLabel H3K27ac_t2
+longLabel H3K27ac_t2 Confluent preadipocytes
 visibility full
 aggregate transparentOverlay
 showSubtrackColorOnUi on
@@ -40,7 +41,7 @@ viewLimits 1:20
     parent H3K27ac_t2
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040121/coverage.bw
     shortLabel H3K27ac_t2
-    longLabel H3K27ac_t2
+    longLabel H3K27ac_t2 Confluent preadipocytes
     color 255,0,0
 
     track  H3K27ac_t2_2
@@ -48,13 +49,14 @@ viewLimits 1:20
     parent H3K27ac_t2
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040122/coverage.bw
     shortLabel H3K27ac_t2
-    longLabel H3K27ac_t2
+    longLabel H3K27ac_t2 Confluent preadipocytes
+    color 0,255,0
 
 track H3K27ac_t3
 type bigWig
 container multiWig
 shortLabel H3K27ac_t3
-longLabel H3K27ac_t3
+longLabel H3K27ac_t3 Immature adipocytes
 visibility full
 aggregate transparentOverlay
 showSubtrackColorOnUi on
@@ -66,7 +68,7 @@ viewLimits 1:20
     parent H3K27ac_t3
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040140/coverage.bw
     shortLabel H3K27ac_t3
-    longLabel H3K27ac_t3
+    longLabel H3K27ac_t3 Immature adipocytes
     color 255,0,0
 
     track  H3K27ac_t3_2
@@ -74,13 +76,14 @@ viewLimits 1:20
     parent H3K27ac_t3
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040141/coverage.bw
     shortLabel H3K27ac_t3
-    longLabel H3K27ac_t3
+    longLabel H3K27ac_t3 Immature adipocytes
+    color 0,255,0
 
 track H3K27ac_t4
 type bigWig
 container multiWig
 shortLabel H3K27ac_day_7
-longLabel H3K27ac_day_7
+longLabel H3K27ac Mature adipocytes (Day 7)
 visibility full
 aggregate transparentOverlay
 showSubtrackColorOnUi on
@@ -92,7 +95,7 @@ viewLimits 1:20
     parent H3K27ac_t4
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040160/coverage.bw
     shortLabel H3K27ac day 7
-    longLabel H3K27ac day 7
+    longLabel H3K27ac Mature adipocytes (Day 7)
     color 255,0,0
 
     track  H3K27ac_t4_2
@@ -100,14 +103,15 @@ viewLimits 1:20
     parent H3K27ac_t4
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040161/coverage.bw
     shortLabel H3K27ac day 7 post confluence
-    longLabel H3K27ac day 7 post confluence
+    longLabel H3K27ac Mature adipocytes (Day 7)
+    color 0,255,0
 
     track  H3K27ac_t4_3
     type bigWig
     parent H3K27ac_t4
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040162/coverage.bw
     shortLabel H3K27ac day 7 post confluence
-    longLabel H3K27ac day 7 post confluence
+    longLabel H3K27ac Mature adipocytes (Day 7)
 
 track H3K27me3_t4
 type bigWig
