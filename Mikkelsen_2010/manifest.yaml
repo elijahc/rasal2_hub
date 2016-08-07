@@ -1,0 +1,35 @@
+---
+GSE20752:
+    title:  'Comparative Epigenomic Analysis of Murine and Human Adipogenesis'
+    subseries:
+        GSE20696:
+            title: 'Expression profiling of 3T3-L1 adipogenesis'
+            organism: 'Mus musculus'
+            summary:
+            overall_design:
+        GSE21365:
+            title: 'Epigenomic profiling of 3T3-L1 adipogenesis'
+            experiment_type: 'Genome binding/occupancy profiling by high throughput sequencing'
+            cell_type:  '3T3-L1 adipocytes'
+            samples:
+                '3T3L1_t3_H3K27me3':
+                    characteristics: |
+                        'cell type: 3T3-L1 adipocytes
+                        time (relative to induction): day 2
+                        chip epitope: H3K27me3
+                        chip antibody: Upstate, Cat# 07-449, Lot# DAM1387952'
+                    acc:    'GSM535759'
+                    ftp:    'ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX019/SRX019381'
+                '3T3L1_t4_H3K27ac':
+                    acc:    'GSM535765'
+                    ftp:    'ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX019/SRX019387'
+                    ids:
+                        - 'SRR040160.sra'
+                        - 'SRR040161.sra'
+                        - 'SRR040162.sra'
+                '3T3L1_t4_H3K27me3':
+                    acc:    'GSM535766'
+                    ftp:    'ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX019/SRX019388'
+                    ids:
+                        - 'SRR040163.sra'
+                        - 'SRR040164.sra'

@@ -1,0 +1,117 @@
+#-*- snakemake -*-
+# Snakefile example
+import yaml, os
+
+def _rules_path():
+    return '/vol3/home/elijah/dev/keystone/rules'
+
+configfile: 'conf.yaml'
+print(config)
+
+# Load pipeline libraries
+include: os.path.join(_rules_path(), "base.rules")
+include: os.path.join(_rules_path(), "bedtools.rules")
+include: os.path.join(_rules_path(), "bowtie.rules")
+#include: os.path.join(_rules_path(), "genomedata.rules")
+#include: os.path.join(_rules_path(), "segway.rules")
+#include: os.path.join(_rules_path(), "segtools.rules")
+include: os.path.join(_rules_path(), "genome_browser_tools.rules")
+include: os.path.join(_rules_path(), "gzip.rules")
+include: os.path.join(_rules_path(), "remote.rules")
+include: os.path.join(_rules_path(), "deeptools.rules")
+
+# Load analysis specific config file
+#user_configs =  yaml.load(open('./conf.yaml', 'r'))
+#print(user_configs)
+#config.update(user_configs)
+
+# Load sample manifest
+manifest = yaml.load(open('./manifest.yaml', 'r'))
+
+
+def id(sample_list):
+    id_list = []
+    for s in sample_list:
+        id_list.append(s['srr_id'])
+    return id_list 
+
+#DATASETS = id(manifest['GSE20752'])
+DATASETS = {
+    'wce': [
+    # 3T3L1_WCE
+    'SRR040087','SRR040088',
+    'SRR040089','SRR040090',
+    'SRR040091','SRR040092',
+    'SRR040093','SRR040094',
+    'SRR040095'
+    ],
+    ('t1','H3K27ac'): [
+    # 3T3L1_t1_H3K27ac
+    'SRR040103','SRR040104'
+    ],
+    ('t1','H3K27me3'): [
+    # 3T3L1_t1_H3K27me3
+    'SRR040105',
+    'SRR040106','SRR040107','SRR040108'
+    ],
+    ('t2','H3K27ac'): [
+    # 3T3L1_t2_H3K27ac
+    'SRR040121',
+    'SRR040122'
+    ],
+    ('t3','H3K27ac'): [
+    # 3T3L1_t3_H3K27ac
+    'SRR040140',
+    'SRR040141'
+    ],
+    ('t3','H3K27me3'): [
+    # 3T3L1_t3_H3K27me3
+    'SRR040142','SRR040143','SRR040144','SRR040145'
+    ],
+    ('t4','H3K27me3'): [
+    # 3T3L1_t4_H3K27me3
+    'SRR040163','SRR040164'
+    ],
+    ('t4', 'H3K27ac'): [
+    # 3T3L1_t4_H3K27ac
+    'SRR040160',
+    'SRR040161','SRR040162'
+    ],
+    ('t4','CTCF'): [
+    # 3T3L1_t4_CTCF
+    # 'SRR040169',
+    'SRR040170'
+    ]
+}
+H3K27me3 = [
+    # 3T3L1_t1_H3K27me3
+    'SRR040105',
+    'SRR040106','SRR040107','SRR040108',
+    # 3T3L1_t2_H3K27me3
+    'SRR040123','SRR040124',
+    # 3T3L1_t3_H3K27me3
+    'SRR040142','SRR040143','SRR040144','SRR040145',
+    # 3T3L1_t4_H3K27me3
+    'SRR040163','SRR040164'
+]
+H3K27ac = [
+    # 3T3L1_t1_H3K27ac
+    'SRR040103','SRR040104',
+    # 3T3L1_t2_H3K27ac
+    'SRR040121',
+    'SRR040122',
+    # 3T3L1_t3_H3K27ac
+    'SRR040140',
+    'SRR040141',
+    # 3T3L1_t4_H3K27ac
+    'SRR040160',
+    'SRR040161','SRR040162'
+]
+
+#include:  'paradigms/by_frame_5_label.rules'
+
+rule all:
+    input: 
+        expand('bigwigs/{sample}/coverage.bw', sample=H3K27me3)
+#        rules.by_frame_5_label.output,
+#        rules.by_frame_dyads.output

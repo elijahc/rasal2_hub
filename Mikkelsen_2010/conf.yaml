@@ -1,0 +1,14 @@
+---
+align_assembly:
+    ref_genome:     '-x ~/ref/genomes/mm9/mm9'
+    assembly:       'mm9'
+    options:        '--end-to-end'
+bedgraph_to_bigwig:
+    chrom_sizes:    '/vol3/home/elijah/ref/genomes/mm9/mm9.chrom.sizes'
+all_bedgraph_to_bigwig:
+    chrom_sizes:    '/vol3/home/elijah/ref/genomes/mm9/mm9.chrom.sizes'
+genomecov:
+    chrom_sizes:    '/vol3/home/elijah/ref/genomes/mm9/mm9.chrom.sizes'
+    options:        '-bg -pc -split'
+bam_coverage:
+    options:        '--ignoreDuplicates --extendReads 200 --normalizeTo1x 2150570000 -bs 25 --smoothLength 500 --minMappingQuality 20 --skipNAs'
