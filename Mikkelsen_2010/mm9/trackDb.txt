@@ -1,143 +1,58 @@
-track H3K27ac_composite
+track H3K27ac
 compositeTrack on
 type bigWig
-subGroup1 ab Antibody \
-    H3K27ac=H3K27ac \
-    H3K27me3=H3K27me3
-subGroup2 tp Timepoint \
-    t1=Proliferating Preadipocytes (Day -2) \
-    t2=Confluent Preadipocytes (Day 0) \
-    t3=Immature Adipocytes (Day 2) \
-    t4=Mature Adipocytes (Day 7)
+subGroup1 cell Cell Line 3T3=3T3L1 hASC=human Adipocytes Stem Cells
+subGroup2 ab Antibody H3K27AC1=H3K27ac H3K27ME3=H3K27me3
+subGroup3 tp Timepoint T1=Proliferating_Preadipocytes_Day_-2 T2=Confluent-Preadipocytes_Day_0 T3=Immature-Adipocytes-(Day_2) T4=Mature_Adipocytes_(Day_7)
 dimensions dimX=ab dimY=tp
 sortOrder tp=+ ab=+
 shortLabel H3K27ac
-longLabel H3K27ac Composite
-viewLimits 1:20
-allButtonPair on
+longLabel H3K27ac-Composite
+filterComposite dimX
 
     track H3K27ac_t1
     type bigWig
     parent H3K27ac_composite on
-    subgroups ab=H3K27ac tp=t1
-    container multiWig
     shortLabel H3K27ac_t1
     longLabel H3K27ac_t1 Proliferating preadipocytes
+    subGroups cell=3T3 ab=H3K27AC1 tp=T1
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t1/replicate_average.bw
     visibility full
-    aggregate transparentOverlay
-    showSubtrackColorOnUi on
     maxHeightPixels 500:50:8
     viewLimits 1:20
-
-        track  H3K27ac_t1_1
-        type bigWig
-        parent H3K27ac_t1
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040103/coverage.bw
-        shortLabel H3K27ac_t1
-        longLabel H3K27ac_t1 Proliferating preadipocytes
-        color 255,0,0
-
-        track  H3K27ac_t1_2
-        type bigWig
-        parent H3K27ac_t1
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040104/coverage.bw
-        shortLabel H3K27ac_t1
-        longLabel H3K27ac_t1 Proliferating preadipocytes
-        color 0,255,0
 
     track H3K27ac_t2
     type bigWig
     parent H3K27ac_composite on
-    subgroups ab=H3K27ac tp=t2
-    container multiWig
     shortLabel H3K27ac_t2
     longLabel H3K27ac_t2 Confluent preadipocytes
+    subGroups cell=3T3 ab=H3K27AC1 tp=T2
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t2/replicate_average.bw
     visibility full
-    aggregate transparentOverlay
-    showSubtrackColorOnUi on
     maxHeightPixels 500:50:8
     viewLimits 1:20
-
-        track  H3K27ac_t2_1
-        type bigWig
-        parent H3K27ac_t2
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040121/coverage.bw
-        shortLabel H3K27ac_t2
-        longLabel H3K27ac_t2 Confluent preadipocytes
-        color 255,0,0
-
-        track  H3K27ac_t2_2
-        type bigWig
-        parent H3K27ac_t2
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040122/coverage.bw
-        shortLabel H3K27ac_t2
-        longLabel H3K27ac_t2 Confluent preadipocytes
-        color 0,255,0
 
     track H3K27ac_t3
     type bigWig
     parent H3K27ac_composite on
-    subgroups ab=H3K27ac tp=t3
-    container multiWig
     shortLabel H3K27ac_t3
-    longLabel H3K27ac_t3 Immature adipocytes
+    longLabel H3K27ac_t3 Confluent preadipocytes
+    subGroups cell=3T3 ab=H3K27AC1 tp=T3
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t3/replicate_average.bw
     visibility full
-    aggregate transparentOverlay
-    showSubtrackColorOnUi on
     maxHeightPixels 500:50:8
     viewLimits 1:20
-
-        track  H3K27ac_t3_1
-        type bigWig
-        parent H3K27ac_t3
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040140/coverage.bw
-        shortLabel H3K27ac_t3
-        longLabel H3K27ac_t3 Immature adipocytes
-        color 255,0,0
-
-        track  H3K27ac_t3_2
-        type bigWig
-        parent H3K27ac_t3
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040141/coverage.bw
-        shortLabel H3K27ac_t3
-        longLabel H3K27ac_t3 Immature adipocytes
-        color 0,255,0
 
     track H3K27ac_t4
     type bigWig
     parent H3K27ac_composite on
-    subgroups ab=H3K27ac tp=t4
-    container multiWig
     shortLabel H3K27ac_t4
     longLabel H3K27ac_t4 Mature adipocytes (Day 7)
+    subGroups cell=3T3 ab=H3K27AC1 tp=T4
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t4/replicate_average.bw
     visibility full
-    aggregate transparentOverlay
-    showSubtrackColorOnUi on
     maxHeightPixels 500:50:8
     viewLimits 1:20
-
-        track  H3K27ac_t4_1
-        type bigWig
-        parent H3K27ac_t4
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040160/coverage.bw
-        shortLabel H3K27ac day 7
-        longLabel H3K27ac Mature adipocytes (Day 7)
-        color 255,0,0
-
-        track  H3K27ac_t4_2
-        type bigWig
-        parent H3K27ac_t4
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040161/coverage.bw
-        shortLabel H3K27ac day 7 post confluence
-        longLabel H3K27ac Mature adipocytes (Day 7)
-        color 0,255,0
-
-        track  H3K27ac_t4_3
-        type bigWig
-        parent H3K27ac_t4
-        bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040162/coverage.bw
-        shortLabel H3K27ac day 7 post confluence
-        longLabel H3K27ac Mature adipocytes (Day 7)
 
 track H3K27me3_t1
 type bigWig
