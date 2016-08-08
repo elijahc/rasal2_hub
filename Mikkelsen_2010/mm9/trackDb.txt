@@ -12,12 +12,14 @@ subGroup2 tp Timepoint \
 dimensions dimX=ab dimY=tp
 sortOrder tp=+ ab=+
 shortLabel H3K27ac
+longLabel H3K27ac Composite
 viewLimits 1:20
 allButtonPair on
 
     track H3K27ac_t1
     type bigWig
     parent H3K27ac_composite on
+    subgroups ab=H3K27ac tp=t1
     container multiWig
     shortLabel H3K27ac_t1
     longLabel H3K27ac_t1 Proliferating preadipocytes
@@ -46,6 +48,7 @@ allButtonPair on
     track H3K27ac_t2
     type bigWig
     parent H3K27ac_composite on
+    subgroups ab=H3K27ac tp=t2
     container multiWig
     shortLabel H3K27ac_t2
     longLabel H3K27ac_t2 Confluent preadipocytes
@@ -74,6 +77,7 @@ allButtonPair on
     track H3K27ac_t3
     type bigWig
     parent H3K27ac_composite on
+    subgroups ab=H3K27ac tp=t3
     container multiWig
     shortLabel H3K27ac_t3
     longLabel H3K27ac_t3 Immature adipocytes
@@ -102,6 +106,7 @@ allButtonPair on
     track H3K27ac_t4
     type bigWig
     parent H3K27ac_composite on
+    subgroups ab=H3K27ac tp=t4
     container multiWig
     shortLabel H3K27ac_t4
     longLabel H3K27ac_t4 Mature adipocytes (Day 7)
