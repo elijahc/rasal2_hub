@@ -2,13 +2,13 @@ track ChIP-seq_epigenetics
 compositeTrack on
 type bigWig
 subGroup1 cell Cell Line 3T3=3T3L1 hASC=human Adipocytes Stem Cells
-subGroup2 ab Antibody H3K27AC1=H3K27ac H3K27ME3=H3K27me3
-subGroup3 tp Timepoint T1=Proliferating_Preadipocytes_Day_-2 T2=Confluent-Preadipocytes_Day_0 T3=Immature-Adipocytes-(Day_2) T4=Mature_Adipocytes_(Day_7)
+subGroup2 ab Antibody H3K27AC1=H3K27ac H3K27ME3=H3K27me3 NA=NotApplicable
+subGroup3 tp Timepoint T0=WCE T1=Proliferating_Preadipocytes_Day_-2 T2=Confluent-Preadipocytes_Day_0 T3=Immature-Adipocytes-(Day_2) T4=Mature_Adipocytes_(Day_7)
 dimensions dimX=ab dimY=tp
+filterComposite dimX
 sortOrder tp=+ ab=+
 shortLabel ChIP-seq_epigenetics
 longLabel ChIP-seq Epigenetic profiling
-filterComposite dimX
 autoscale on
 
     track H3K27ac_t1
@@ -99,34 +99,13 @@ autoscale on
     maxHeightPixels 500:50:8
     viewLimits 1:20
     
-track 3T3L1_WCE
-type bigWig
-container multiWig
-shortLabel 3T3L1 WCE
-longLabel 3T3L1 Whole Cell Extracts (Input Control)
-visibility full
-aggregate transparentOverlay
-showSubtrackColorOnUi on
-maxHeightPixels 500:50:8
-viewLimits 1:20
-
-    track  WCE_1
+    track WCE
     type bigWig
-    parent 3T3L1_WCE
-    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040087/coverage.bw
-    shortLabel 3T3L1 WCE rep 1
-    longLabel 3T3L1 WCE rep 1
-
-    track  WCE_2
-    type bigWig
-    parent 3T3L1_WCE
-    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040091/coverage.bw
-    shortLabel 3T3L1 WCE rep 2
-    longLabel 3T3L1 WCE rep 2
-
-    track  WCE_3
-    type bigWig
-    parent 3T3L1_WCE
-    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/SRR040095/coverage.bw
-    shortLabel 3T3L1 WCE rep 3
-    longLabel 3T3L1 WCE rep 3
+    parent ChIP-seq_epigenetics on
+    shortLabel 3T3L1 WCE
+    longLabel 3T3L1 Whole Cell Extracts (Input Control)
+    subGroups cell=3T3 ab=NA tp=T0
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/WCE/replicate_average.bw
+    visibility full
+    maxHeightPixels 500:50:8
+    viewLimits 1:20
