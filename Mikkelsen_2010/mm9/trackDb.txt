@@ -12,7 +12,7 @@ filterComposite dimX
 
     track H3K27ac_t1
     type bigWig
-    parent H3K27ac_composite on
+    parent H3K27ac on
     shortLabel H3K27ac_t1
     longLabel H3K27ac_t1 Proliferating preadipocytes
     subGroups cell=3T3 ab=H3K27AC1 tp=T1
@@ -23,7 +23,7 @@ filterComposite dimX
 
     track H3K27ac_t2
     type bigWig
-    parent H3K27ac_composite on
+    parent H3K27ac on
     shortLabel H3K27ac_t2
     longLabel H3K27ac_t2 Confluent preadipocytes
     subGroups cell=3T3 ab=H3K27AC1 tp=T2
@@ -34,7 +34,7 @@ filterComposite dimX
 
     track H3K27ac_t3
     type bigWig
-    parent H3K27ac_composite on
+    parent H3K27ac on
     shortLabel H3K27ac_t3
     longLabel H3K27ac_t3 Confluent preadipocytes
     subGroups cell=3T3 ab=H3K27AC1 tp=T3
@@ -45,7 +45,7 @@ filterComposite dimX
 
     track H3K27ac_t4
     type bigWig
-    parent H3K27ac_composite on
+    parent H3K27ac on
     shortLabel H3K27ac_t4
     longLabel H3K27ac_t4 Mature adipocytes (Day 7)
     subGroups cell=3T3 ab=H3K27AC1 tp=T4
