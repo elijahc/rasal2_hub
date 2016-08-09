@@ -2,7 +2,7 @@ track ChIP-seq_epigenetics
 compositeTrack on
 type bigWig
 subGroup1 cell Cell Line 3T3=3T3L1 hASC=human Adipocytes Stem Cells
-subGroup2 ab Antibody H3K27AC1=H3K27ac H3K27ME3=H3K27me3 NA=NotApplicable
+subGroup2 ab Antibody H3K27AC1=H3K27ac H3K27ME3=H3K27me3 H3K4ME3=H3K4me3 NA=NotApplicable
 subGroup3 tp Timepoint T0=WCE T1=Proliferating_Preadipocytes_Day_-2 T2=Confluent-Preadipocytes_Day_0 T3=Immature-Adipocytes-(Day_2) T4=Mature_Adipocytes_(Day_7)
 dimensions dimX=ab dimY=tp
 filterComposite dimX
@@ -95,6 +95,50 @@ autoscale on
     longLabel H3K27me3_t4 Mature adipocytes (Day 7)
     subGroups cell=3T3 ab=H3K27ME3 tp=T4
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27ME3_t4/replicate_average.bw
+    visibility full
+    maxHeightPixels 500:50:8
+    viewLimits 1:20
+
+    track H3K4me3_t1
+    type bigWig
+    parent ChIP-seq_epigenetics on
+    shortLabel H3K4me3_t1
+    longLabel H3K4me3_t1 Proliferating preadipocytes
+    subGroups cell=3T3 ab=H3K4ME3 tp=T1
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t1/replicate_average.bw
+    visibility full
+    maxHeightPixels 500:50:8
+    viewLimits 1:20
+
+    track H3K4me3_t2
+    type bigWig
+    parent ChIP-seq_epigenetics on
+    shortLabel H3K4me3_t2
+    longLabel H3K4me3_t2 Confluent preadipocytes
+    subGroups cell=3T3 ab=H3K4ME3 tp=T2
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t2/replicate_average.bw
+    visibility full
+    maxHeightPixels 500:50:8
+    viewLimits 1:20
+
+    track H3K4me3_t3
+    type bigWig
+    parent ChIP-seq_epigenetics on
+    shortLabel H3K4me3_t3
+    longLabel H3K4me3_t3 Immature Adipocytes (Day 2)
+    subGroups cell=3T3 ab=H3K4ME3 tp=T3
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t3/replicate_average.bw
+    visibility full
+    maxHeightPixels 500:50:8
+    viewLimits 1:20
+
+    track H3K4me3_t4
+    type bigWig
+    parent ChIP-seq_epigenetics on
+    shortLabel H3K4me3_t4
+    longLabel H3K4me3_t4 Mature adipocytes (Day 7)
+    subGroups cell=3T3 ab=H3K4ME3 tp=T4
+    bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t4/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
     viewLimits 1:20
