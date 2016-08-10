@@ -5,11 +5,9 @@ subGroup1 cell Cell Line 3T3=3T3L1 hASC=human Adipocytes Stem Cells
 subGroup2 ab Antibody H3K27AC1=H3K27ac H3K27ME3=H3K27me3 H3K4ME3=H3K4me3 NA=NotApplicable
 subGroup3 tp Timepoint T0=WCE T1=Proliferating_Preadipocytes_Day_-2 T2=Confluent-Preadipocytes_Day_0 T3=Immature-Adipocytes-(Day_2) T4=Mature_Adipocytes_(Day_7)
 dimensions dimX=ab dimY=tp
-filterComposite dimX
 sortOrder tp=+ ab=+
 shortLabel ChIP-seq_epigenetics
 longLabel ChIP-seq Epigenetic profiling
-autoscale on
 
     track H3K27ac_t1
     type bigWig
@@ -20,7 +18,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t1/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K27ac_t2
     type bigWig
@@ -31,7 +29,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t2/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K27ac_t3
     type bigWig
@@ -42,7 +40,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t3/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K27ac_t4
     type bigWig
@@ -53,7 +51,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27AC1_t4/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K27me3_t1
     type bigWig
@@ -64,7 +62,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27ME3_t1/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K27me3_t2
     type bigWig
@@ -75,7 +73,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27ME3_t2/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K27me3_t3
     type bigWig
@@ -86,7 +84,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27ME3_t3/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K27me3_t4
     type bigWig
@@ -97,7 +95,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K27ME3_t4/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K4me3_t1
     type bigWig
@@ -108,7 +106,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t1/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K4me3_t2
     type bigWig
@@ -119,7 +117,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t2/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K4me3_t3
     type bigWig
@@ -130,7 +128,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t3/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
 
     track H3K4me3_t4
     type bigWig
@@ -141,7 +139,7 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/H3K4ME3_t4/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
     
     track WCE
     type bigWig
@@ -152,4 +150,4 @@ autoscale on
     bigDataUrl https://raw.githubusercontent.com/elijahc/rasal2_hub/master/Mikkelsen_2010/mm9/ChIP-seq/WCE/replicate_average.bw
     visibility full
     maxHeightPixels 500:50:8
-    viewLimits 1:20
+    viewLimits 1:40
